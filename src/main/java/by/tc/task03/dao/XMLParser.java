@@ -13,11 +13,11 @@ public class XMLParser {
 
     private static Stack<Node> stackNodes;
 
-    private final static String XML_DECLARATION = "(<\\?.*\\?>)"; //<?xml version="1.0" encoding="UTF-8"?>
-    private final static String COMMENT_TAG = "(<!--.*-->)"; //  <!-- Comments -->
-    private final static String END_TAG = "</.*>"; // </tag>
-    private final static String CLOSED_TAG = "<[\\s\\w]+[ \\w\\S]+/[\\s]*>"; // <tagName attribute="value"/>
-    private final static String SIMPLE_TAG = "<[^/][\\s\\w\\-_=\"']+>"; //<tagName attribute="value">
+    private static final String XML_DECLARATION = "(<\\?.*\\?>)"; //<?xml version="1.0" encoding="UTF-8"?>
+    private static final String COMMENT_TAG = "(<!--.*-->)"; //  <!-- Comments -->
+    private static final String END_TAG = "</.*>"; // </tag>
+    private static final String CLOSED_TAG = "<[\\s\\w]+[ \\w\\S]+/[\\s]*>"; // <tagName attribute="value"/>
+    private static final String SIMPLE_TAG = "<[^/][\\s\\w\\-_=\"']+>"; //<tagName attribute="value">
     private static final String TO_SPLIT_ATTRIBUTE ="[=\"\\/]+";
 
     public static Node parseXML(String path) throws DaoException {
