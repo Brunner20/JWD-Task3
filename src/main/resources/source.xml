@@ -1,0 +1,13 @@
+<breakfast-menu>
+    <!--Sdsd-->
+    <food id="0" sa="s"/>
+    <food id="1" sa="s">
+        <name>Belgian Waffles
+        </name>
+        <price>$5.95</price>
+    </food>
+    <food id="2" sa="s">
+        <name>StrawBerry Belgian Waffles</name>
+        <price>$7.95</price>
+    </food>
+</breakfast-menu>
